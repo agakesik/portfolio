@@ -1,4 +1,5 @@
-$red: pink;
+@use './modules/all' as *;
+
 body {
-  background: $red;
+  background: $color;
 }
