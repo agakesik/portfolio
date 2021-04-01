@@ -32,5 +32,8 @@
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
+  },
+  "dependencies": {
+    "modern-normalize": "^1.0.0"
   }
 }
