@@ -1,5 +1,11 @@
 @use './modules/all' as *;
 
 body {
-  background: $color;
+  background: $accent;
+}
+
+h1 {
+  font-family: $ff-ss;
+  font-weight: 700;
+  font-style: italic;
 }

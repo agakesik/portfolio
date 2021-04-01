@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Roboto Slab";
+  src: url(../fonts/RobotoSlab-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto Slab";
+  src: url(../fonts/RobotoSlab-Thin.ttf) format("truetype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Roboto Slab";
+  src: url(../fonts/RobotoSlab-Light.ttf) format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Roboto Slab";
+  src: url(../fonts/RobotoSlab-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url(../fonts/Atkinson-Hyperlegible-Regular-102.ttf) format("truetype");
+}
+
+$ff-s: "Roboto Slab", serif;
+$ff-ss: "Atkinson Hyperlegible", sans-serif;
