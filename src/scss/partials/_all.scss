@@ -1,2 +1,3 @@
-@import "./base";
-@import "./hero";
+@forward "./base";
+@forward "./hero";
+@forward "./nav";
