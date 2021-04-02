@@ -1,0 +1,31 @@
+@use '../modules/colors' as *;
+@use '../modules/fonts' as font;
+
+body {
+  background: $white;
+  font-family: font.$sans-serif;
+  color: $black;
+}
+h1 {
+  font-family: font.$serif;
+  //   font-weight: 700;
+  //   font-style: italic;
+}
+p {
+  margin: 0;
+}
+.underline {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+.underline::after {
+  position: absolute;
+  height: 3px;
+  content: "";
+  left: 0.7em;
+  right: -0.7em;
+  color: #000;
+  background-color: $primary;
+  bottom: -0.3em;
+}

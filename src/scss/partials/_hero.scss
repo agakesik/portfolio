@@ -1,0 +1,51 @@
+@use '../modules/colors' as *;
+@use '../modules/mixins' as mixin;
+
+.hero {
+  background-color: $primary;
+  height: 90vh;
+  padding: 2rem;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    background-color: $primary;
+    width: 50px;
+    height: 27px;
+    z-index: -1;
+  }
+
+  &::before {
+    transform: skew(0, 30deg);
+  }
+  &::after {
+    left: 80px;
+    transform: skew(0, -30deg);
+  }
+}
+
+.hero-card {
+  background-color: $white;
+  height: 100%;
+  padding: 1rem;
+  border: 2px solid $black;
+  $shadow-color: mix($gray, $primary, 70%);
+  box-shadow: 5px 5px 15px 0 $shadow-color;
+
+  h2 {
+    @include mixin.underline($primary);
+  }
+}
+
+.hero-image {
+  position: absolute;
+  bottom: -5vh;
+  right: 0;
+
+  img {
+    display: block;
+  }
+}

@@ -1,0 +1,21 @@
+%underline {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    position: absolute;
+    height: 3px;
+    content: "";
+    left: 0.7em;
+    right: -0.7em;
+    bottom: -0.3em;
+  }
+}
+@mixin underline($fc: currentColor) {
+  @extend %underline;
+
+  &::after {
+    background-color: $fc;
+  }
+}

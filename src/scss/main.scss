@@ -1,11 +1,2 @@
-@use './modules/all' as *;
-
-body {
-  background: $accent;
-}
-
-h1 {
-  font-family: $ff-ss;
-  font-weight: 700;
-  font-style: italic;
-}
+@import "../../node_modules/modern-normalize/modern-normalize.css";
+@import "./partials/all";
