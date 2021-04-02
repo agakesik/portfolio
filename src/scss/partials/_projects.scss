@@ -1,0 +1,51 @@
+@use '../modules/colors' as *;
+@use '../modules/mixins' as mixin;
+
+.projects {
+  padding: 5vw 1rem 10vw;
+  background-color: $black;
+  color: $white;
+  clip-path: polygon(0 10vw, 100% 0, 100% calc(100% - 10vw), 0 100%);
+}
+
+.project {
+  display: grid;
+  grid-template-rows: 1fr 1fr 4fr;
+  margin: 2rem 0;
+  img {
+    width: 70%;
+    margin: 0 auto;
+    grid-row: 1/3;
+    grid-column: 1/ -1;
+    z-index: 1;
+  }
+}
+.project-desc {
+  grid-column: 1/ -1;
+  grid-row: 2 / -1;
+  background-color: $gray;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  padding-top: 2.5rem;
+
+  h2 {
+    text-transform: uppercase;
+    display: inline-block;
+    // text-decoration: underline $primary dashed;
+    border-bottom: 2px dashed $primary;
+    // text-decoration-style: dashed;
+  }
+
+  span {
+    color: rgba($white, 0.7);
+    text-decoration: underline dotted;
+  }
+
+  a {
+    margin-top: 0.5em;
+    float: right;
+  }
+}
+.project-link {
+  text-align: right;
+}
