@@ -1,0 +1,36 @@
+@use '../modules/colors' as *;
+
+.about-me {
+  padding: 0 1rem;
+}
+
+.about-section {
+  &:nth-child(n + 3) {
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 80%;
+      height: 0.2em;
+      top: 0;
+    }
+    &::before {
+      background-color: $primary;
+      left: 10%;
+    }
+    &::after {
+      background-color: $black;
+      top: 0.35em;
+      left: 15%;
+    }
+  }
+  h2 {
+    text-align: right;
+  }
+  p {
+    text-align: justify;
+  }
+}

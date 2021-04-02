@@ -1,5 +1,6 @@
 @use '../modules/colors' as *;
 @use '../modules/fonts' as font;
+@use '../modules/mixins' as mixin;
 
 body {
   background: $white;
@@ -13,4 +14,9 @@ h1 {
 }
 p {
   margin: 0;
+}
+
+section h1 {
+  font-size: 3rem;
+  @include mixin.underline($primary);
 }
