@@ -3,7 +3,7 @@
 
 .hero {
   background-color: $primary;
-  height: 90vh;
+  height: 80vh;
   padding: 2rem;
   position: relative;
 
@@ -32,8 +32,7 @@
   height: 100%;
   padding: 1rem;
   border: 2px solid $black;
-  $shadow-color: mix($gray, $primary, 70%);
-  box-shadow: 5px 5px 15px 0 $shadow-color;
+  box-shadow: 5px 5px 20px 0 rgba($gray, 0.7);
 
   h2 {
     @include mixin.underline($primary);

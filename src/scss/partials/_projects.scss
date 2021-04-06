@@ -24,16 +24,13 @@
   grid-column: 1/ -1;
   grid-row: 2 / -1;
   background-color: $gray;
-  padding: 0.5em 1em;
-  border-radius: 1em;
-  padding-top: 2.5rem;
+  padding: 2.5em 1em 0.5em;
+  border-radius: 1rem;
 
   h2 {
     text-transform: uppercase;
     display: inline-block;
-    // text-decoration: underline $primary dashed;
     border-bottom: 2px dashed $primary;
-    // text-decoration-style: dashed;
   }
 
   span {
@@ -45,7 +42,4 @@
     margin-top: 0.5em;
     float: right;
   }
-}
-.project-link {
-  text-align: right;
 }
