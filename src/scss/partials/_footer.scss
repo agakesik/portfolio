@@ -1,0 +1,19 @@
+@use "../modules/colors" as *;
+
+footer {
+  background-color: $gray;
+  text-align: center;
+  padding: 1rem;
+  color: $white;
+}
+
+.social-icon {
+  font-size: 2rem;
+  padding: 0.3em;
+}
+
+.copyright {
+  font-size: 0.7rem;
+  color: rgba($white, 0.7);
+  margin-top: 1em;
+}
