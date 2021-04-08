@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 @mixin underline($fc: currentColor) {
   text-decoration: none;
   position: relative;
@@ -11,5 +13,11 @@
     right: -0.5em;
     bottom: -0.3em;
     background-color: $fc;
+  }
+}
+
+@mixin mq($width: $bigger-scr) {
+  @media (min-width: $width) {
+    @content;
   }
 }

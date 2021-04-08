@@ -20,3 +20,19 @@ section h1 {
   font-size: 3rem;
   @include mixin.underline($primary);
 }
+
+.section-container {
+  // padding: 0 1rem;
+
+  h1 {
+    margin-left: 5vw;
+  }
+  @include mixin.mq {
+    margin-left: 100px;
+
+    & > div {
+      max-width: 1100px;
+      margin: 2em auto;
+    }
+  }
+}

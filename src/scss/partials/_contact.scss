@@ -1,7 +1,13 @@
 @use "../modules/colors" as *;
+@use '../modules/fonts' as font;
 
 .contact {
-  padding: 0 1rem;
+  padding: 0 1rem 2rem;
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
 
   input,
   textarea {
@@ -12,5 +18,15 @@
 
   label {
     color: rgba($black, 0.7);
+  }
+
+  button {
+    display: block;
+    margin-left: auto;
+    padding: 0.5em 2em;
+    background-color: $primary;
+    border: none;
+    font-family: font.$serif;
+    font-size: 1.5em;
   }
 }

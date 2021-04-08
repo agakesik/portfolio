@@ -4,7 +4,9 @@
 .hero {
   background-color: $primary;
   height: 80vh;
-  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 
   &::before,
@@ -18,24 +20,37 @@
     z-index: -1;
   }
 
+  $left-point: 20vw;
   &::before {
+    left: calc(#{$left-point} - 25px);
     transform: skew(0, 30deg);
   }
   &::after {
-    left: 80px;
+    left: calc(#{$left-point} + 25px);
     transform: skew(0, -30deg);
   }
 }
 
 .hero-card {
+  position: relative;
   background-color: $white;
-  height: 100%;
+  height: clamp(300px, 60vh, 500px);
+  width: clamp(330px, 80vw, 800px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
   padding: 1rem;
   border: 2px solid $black;
   box-shadow: 5px 5px 20px 0 rgba($gray, 0.7);
 
+  h1 {
+    margin: 0;
+    font-size: 4rem;
+  }
   h2 {
     @include mixin.underline($primary);
+    margin-left: 5vw;
   }
 }
 
@@ -46,5 +61,10 @@
 
   img {
     display: block;
+  }
+
+  @include mixin.mq {
+    bottom: 20%;
+    right: -10%;
   }
 }
