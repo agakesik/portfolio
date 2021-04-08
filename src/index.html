@@ -12,7 +12,7 @@
     ></script>
   </head>
   <body>
-    <div class="hero">
+    <div class="hero" id="home">
       <div class="hero-card">
         <div>
           <h1>Aga Kęsik</h1>
@@ -37,26 +37,39 @@
     <nav>
       <ul>
         <li class="nav-link">
-          <i class="nav-link-icon fas fa-home" aria-label="home"></i>
-          <span class="nav-link-desc">home</span>
+          <a href="#home">
+            <i class="nav-link-icon fas fa-home" aria-label="home"></i>
+            <span class="nav-link-desc">home</span>
+          </a>
         </li>
         <li class="nav-link">
-          <i class="nav-link-icon fas fa-user" aria-label="about-me"></i>
-          <span class="nav-link-desc">about me</span>
+          <a href="#about">
+            <i class="nav-link-icon fas fa-user" aria-label="about-me"></i>
+            <span class="nav-link-desc">about me</span>
+          </a>
         </li>
         <li class="nav-link">
-          <i class="nav-link-icon fas fa-laptop-code" aria-label="projects"></i>
+          <a href="#projects">
+            <i
+              class="nav-link-icon fas fa-laptop-code"
+              aria-label="projects"
+            ></i>
+          </a>
+
           <span class="nav-link-desc">projects</span>
         </li>
         <li class="nav-link">
-          <i class="nav-link-icon fas fa-envelope" aria-label="contact"></i>
+          <a href="#contact">
+            <i class="nav-link-icon fas fa-envelope" aria-label="contact"></i>
+          </a>
+
           <span class="nav-link-desc">contact</span>
         </li>
       </ul>
     </nav>
 
     <section class="about-me">
-      <div class="section-container">
+      <div class="section-container" id="about">
         <h1>About me!</h1>
         <div class="about-section">
           <h2 class="about-section-title">part one</h2>
@@ -98,7 +111,7 @@
     </section>
 
     <section class="projects">
-      <div class="section-container">
+      <div class="section-container" id="projects">
         <h1>Projects</h1>
 
         <div class="project">
@@ -134,8 +147,8 @@
     </section>
 
     <section class="contact">
-      <div class="section-container">
-        <h1>contact me</h1>
+      <div class="section-container" id="contact">
+        <h1>Contact me</h1>
         <form action="">
           <label for="name"
             >Email:
